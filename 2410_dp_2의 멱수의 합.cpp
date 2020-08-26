@@ -1,4 +1,3 @@
-```c++
 #include<iostream>
 using namespace std;
 int dist[1000005];
@@ -18,4 +17,3 @@ int main()
 	}
 	cout << dist[N] << endl;
 }
-```
