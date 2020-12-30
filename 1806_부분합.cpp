@@ -1,3 +1,7 @@
+
+//풀이
+//두 포인터
+
 #include<iostream>
 using namespace std;
 int n[100005];
