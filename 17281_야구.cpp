@@ -1,3 +1,7 @@
+
+//풀이
+//완전탐색
+
 #include<iostream>
 #include<vector>
 #include<algorithm>
