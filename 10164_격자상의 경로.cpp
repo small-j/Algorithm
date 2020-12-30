@@ -1,3 +1,7 @@
+
+//풀이
+//dynamic programming
+
 #include<iostream>
 #include<queue>
 using namespace std;
