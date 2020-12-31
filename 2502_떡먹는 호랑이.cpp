@@ -4,29 +4,27 @@
 
 #include<iostream>
 using namespace std;
-typedef long long ll;
-ll pow(ll num)
+int D, K, f, s;
+void share(int A, int B, int location)
 {
-	return num * num;
-}
-ll spare(ll num)
-{
-	if (num == 1) return 2;
-	if (num == 0) return 1;
-	ll n = (pow(spare(num / 2))) % 1000000007;
-	if (num % 2 != 0) n = n * 2 % 1000000007;
-	return n;
+	if (A < 1 || A >= B) return;
+	if (location == D - 1)
+	{
+		f = A;
+		s = B;
+		return;
+	}
+	share(B - A, A, location + 1);
+	return;
 }
 int main()
 {
-	int T;
-	scanf("%d", &T);
-	while (T--)
+	scanf("%d%d", &D, &K);
+
+	for (int j = K - 1; j >= 1; j--)
 	{
-		ll N;
-		scanf("%lld", &N);
-		if (N == 1) printf("%d\n", 1);
-		else if (N == 2) printf("%d\n", 1);
-		else printf("%lld\n", spare(N - 2));
+		share(j, K, 1);
+		if (f != 0 && s != 0) break;
 	}
+	printf("%d\n%d\n", f, s);
 }
