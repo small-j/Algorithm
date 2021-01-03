@@ -1,3 +1,7 @@
+
+//풀이
+//dynamic programming
+
 #include<iostream>
 using namespace std;
 int dist[1005];
