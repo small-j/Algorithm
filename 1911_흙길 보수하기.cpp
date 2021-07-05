@@ -1,5 +1,6 @@
 
-
+//풀이
+//greedy, 정렬, 스위핑
 
 #include<iostream>
 #include<vector>
