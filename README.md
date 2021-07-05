@@ -1,1 +1,1 @@
-# BOJ_Algorithm
+# Algorithm
