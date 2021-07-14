@@ -1,3 +1,7 @@
+
+//풀이
+//수학, 백트래킹
+
 #include<iostream>
 #include<string>
 #include<stack>
