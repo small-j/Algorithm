@@ -1,6 +1,6 @@
 
 //풀이
-//그리디
+//구현
 
 function solution(progresses, speeds) {
     var answer = [];
